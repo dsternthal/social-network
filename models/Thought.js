@@ -30,7 +30,7 @@ const thoughtSchema = new Schema(
 );
 
 // Create a virtual property `responses` that gets the amount of response per video
-videoSchema
+thoughtSchema
   .virtual('reactionCount')
   // Getter
   .get(function () {
